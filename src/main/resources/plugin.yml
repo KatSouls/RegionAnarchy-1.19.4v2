@@ -1,0 +1,5 @@
+name: RegionAnarchy-1.19.4
+author: xatiman
+version: 1.0
+main: org.example.Main
+depend: [WorldGuard, WorldEdit]
