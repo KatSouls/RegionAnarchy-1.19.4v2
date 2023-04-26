@@ -21,7 +21,7 @@ public class Main extends JavaPlugin implements Listener {
     public static int CoordPlaceBlockX;
     public static int CoordPlaceBlockY;
     public static int CoordPlaceBlockZ;
-
+    //кб сосать
 
     @Override
     public void onEnable() {
