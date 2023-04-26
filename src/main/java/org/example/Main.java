@@ -13,7 +13,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,6 +21,8 @@ public class Main extends JavaPlugin implements Listener {
     public static int CoordPlaceBlockX;
     public static int CoordPlaceBlockY;
     public static int CoordPlaceBlockZ;
+
+
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this); //при включении сервера срабатывают все ивенты
@@ -53,9 +54,11 @@ public class Main extends JavaPlugin implements Listener {
         }
     }
 
-    @EventHandler
-    public void onBlockBreakEvent(BlockBreakEvent event) {
-        if(event.getBlock().getType() == Material.DIAMOND_ORE) {
-        }
-    }
+//    @EventHandler
+//    public void onBlockBreakEvent(BlockBreakEvent event) {
+//        if(event.getBlock().getX() == CoordPlaceBlockX && event.getBlock().getY() == CoordPlaceBlockY &&
+//                event.getBlock().getZ() == CoordPlaceBlockZ) {
+//            regions.removeRegion("mall", RemovalStrategy.UNSET_PARENT_IN_CHILDREN);
+//        }
+//    }
 }
