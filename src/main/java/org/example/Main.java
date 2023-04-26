@@ -22,6 +22,7 @@ public class Main extends JavaPlugin implements Listener {
     public static int CoordPlaceBlockY;
     public static int CoordPlaceBlockZ;
     //кб сосать
+    //пипокс сосать
 
     @Override
     public void onEnable() {
